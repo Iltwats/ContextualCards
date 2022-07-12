@@ -22,8 +22,8 @@ class CardViewHolder(viewBinding: ViewBinding) : RecyclerView.ViewHolder(viewBin
         fun bindSmallCard(card: Card) {
             with(smallCardBinding) {
                 with(card) {
-                    smallCardTitle.format(formattedTitle, title)
-                    smallCardDescription.format(formattedDescription, description)
+                    smallCardTitle.text = format(formattedTitle,title?:"")
+                    smallCardDescription.text = format(formattedDescription,description?:"")
                     icon?.imgUrl?.let { smallCardIcon.loadImage(it) }
                     url?.let {
                         smallCardView.setOnClickListener {
@@ -56,8 +56,8 @@ class CardViewHolder(viewBinding: ViewBinding) : RecyclerView.ViewHolder(viewBin
         fun bindBigCard(card: Card) {
             with(bigCardBinding) {
                 with(card) {
-                    tvTitle.format(formattedTitle, title)
-                    tvDescription.format(formattedDescription, description)
+                    tvTitle.text =  format(formattedTitle, title?:"")
+                    tvDescription.text = format(formattedDescription,description?:"")
                     ctaList?.let { buttonAction.configureCta(it[0]) }
                     bgImage?.imgUrl?.let { imageBigCard.loadImage(it, true) }
                     url?.let {
@@ -76,7 +76,7 @@ class CardViewHolder(viewBinding: ViewBinding) : RecyclerView.ViewHolder(viewBin
         fun bindSmallCardWithArrow(card: Card) {
             with(layoutSmallCardWithArrowBinding) {
                 with(card) {
-                    smallCardWithArrowTitle.format(formattedTitle, title)
+                    smallCardWithArrowTitle.text = format(formattedTitle,title?:"")
                     icon?.imgUrl?.let { smallCardWithArrowImage.loadImage(it) }
                     url?.let {
                         smallCardWithArrowView.setOnClickListener {

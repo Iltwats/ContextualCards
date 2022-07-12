@@ -6,7 +6,7 @@ data class Entity(
     val text: String,
 
     @SerializedName("font_style")
-    val type: String? = null,
+    val fontStyle: FontStyle?,
 
     val color: String? = null,
     val url: String? = null,
@@ -16,13 +16,5 @@ data class Entity(
 
     @SerializedName("other_url")
     val otherUrl: String? = null
-) {
-    enum class FontStyle {
-        @SerializedName("bold")
-        BOLD,
-
-        @SerializedName("italic")
-        ITALIC
-    }
-}
+)
 
