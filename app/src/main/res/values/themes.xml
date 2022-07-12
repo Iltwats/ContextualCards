@@ -12,7 +12,7 @@
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_fampaylogo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_icon_fampay</item>
         <item name="windowSplashScreenAnimationDuration">2000</item>
         <!-- Set the theme of the Activity that directly follows your splash screen. -->
         <!-- Required -->

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ContextualCards</string>
+    <string name="app_name">Contextual Cards</string>
     <string name="check_connection">No internet connection!</string>
     <string name="remind">Remind Later</string>
     <string name="dismiss">Dismiss Now</string>
