@@ -1,4 +1,4 @@
-package com.atul.fampay.contextualcards
+package com.atul.fampay.contextualcards.views.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
