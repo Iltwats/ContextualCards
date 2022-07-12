@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View.GONE
 import android.view.View.VISIBLE
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.atul.fampay.contextualcards.databinding.ActivityMainBinding
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        installSplashScreen()
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         cardGroupsAdapter = CardGroupsAdapter(this)
         setContentView(activityMainBinding.root)
