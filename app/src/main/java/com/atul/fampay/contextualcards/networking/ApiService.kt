@@ -13,6 +13,6 @@ interface ApiService {
     fun fetchCards(): Observable<CardGroupObject>
 
     companion object {
-        const val ENDPOINT = "04a04703-5557-4c84-a127-8c55335bb3b4"
+        const val ENDPOINT = "fefcfbeb-5c12-4722-94ad-b8f92caad1ad"
     }
 }

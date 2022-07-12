@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/big_card_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="380dp"
     android:layout_margin="@dimen/dim_5dp"
-    app:cardCornerRadius="@dimen/dim_10dp">
+    app:cardCornerRadius="14dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +15,9 @@
         <ImageView
             android:id="@+id/image_big_card"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -23,35 +25,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/dim_10dp"
-            android:layout_marginTop="@dimen/dim_250dp"
-            android:textSize="@dimen/dim_35sp"
+            android:layout_marginTop="150dp"
+            android:textSize="30sp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:layout_marginHorizontal="14dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_description"
             tools:text="Sample Title" />
 
         <TextView
             android:id="@+id/tv_description"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/dim_40dp"
-            android:layout_marginBottom="@dimen/dim_20dp"
-            android:textSize="@dimen/dim_18sp"
+            android:layout_marginTop="@dimen/dim_10dp"
+            android:textSize="18sp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:layout_marginHorizontal="14dp"
             app:layout_constraintBottom_toTopOf="@id/button_action"
-            app:layout_constraintStart_toStartOf="@id/tv_title"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:text="A sample description to see how it renders" />
 
         <Button
             android:id="@+id/button_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dim_10dp"
+            android:layout_marginVertical="@dimen/dim_10dp"
+            android:layout_marginStart="16dp"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            app:layout_constraintStart_toStartOf="@id/tv_title"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/dim_15dp"
+            app:layout_constraintStart_toStartOf="parent"
             tools:text="Button" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
