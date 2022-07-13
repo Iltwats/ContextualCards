@@ -28,7 +28,7 @@ Apk to [download](https://github.com/Iltwats/ContextualCards/raw/master/app/buil
    - [x]  HC9
 - [x]  Build Recycler Views for Card Groups
 - [x]  Configured Deeplinks for each UI
-- [ ]  Add Styling
+- [x]  Add Styling
 - [x]  Connect to API
 - [x]  Add Swipe to Refresh
 - [x]  Add HC3 long click effect
